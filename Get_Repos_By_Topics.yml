@@ -1,4 +1,4 @@
-name: Template_Name
+name: Get_Repos_By_Topics
 
 permissions:
   contents: write
@@ -7,7 +7,7 @@ permissions:
 on: 
   workflow_dispatch:
   schedule:
-    - cron: '35 16 * * *'
+    - cron: '35 18 * * 1'
 
 jobs:
   template_name:
