@@ -6,6 +6,11 @@ permissions:
 
 on: 
   workflow_dispatch:
+    inputs:
+      topics:
+        description: 'Topics("topic:action","topic:action+topic:private")'
+        required: true
+        type: string
   schedule:
     - cron: '35 18 * * 1'
 
@@ -17,5 +22,6 @@ jobs:
         uses: gendloop/get-repos-by-topics@main
         with: 
           token: ${{ secrets.GENDLOOP_ACCESS_TOKEN }}
+          topics: ${{ inputs.topics }}
 
       

@@ -20,7 +20,7 @@ runs:
     - name: get-repos-by-topics
       shell: bash
       run: |
-        curl -H "Authorization: Brearer ${{ secrets.GENDLOOP_ACCESS_TOKEN }}" \
+        curl -H "Authorization: Brearer ${{ inputs.token }}" \
         "https://api.github.com/search/repositories?q=user:${{ github.repository_owner }}+${{ inputs.topics }}" \
         | jq '.items[] | {name: .name, description: .description}' > repos.json
 
