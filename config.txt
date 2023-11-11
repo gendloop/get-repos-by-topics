@@ -2,4 +2,4 @@
 PROJECT_NAME=get-repos-by-topics
 get-repos-by-topics_VERSION_MAJOR=1
 get-repos-by-topics_VERSION_MINOR=0
-get-repos-by-topics_VERSION_PATCH=0
+get-repos-by-topics_VERSION_PATCH=1
