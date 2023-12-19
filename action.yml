@@ -29,4 +29,3 @@ runs:
       with:
         token: ${{ github.token }}
         commit: "chore: get repos by topics \\`${{ inputs.topics }}\\` "
-  
